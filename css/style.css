@@ -7,15 +7,18 @@
 
 /* Estilos para o corpo do documento */
 body {
-    background: aliceblue;
+    background: rgb(238, 240, 242);
     font-family: "Open Sans", sans-serif; /* Defina sua fonte preferida */
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Estilos para o cabeçalho */
 header {
     width: 100%;
-    height: 80px; /* Altura do cabeçalho */
-    background: darkgreen;
+    height: 100px; /* Altura do cabeçalho */
+    background-color: seagreen;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -124,6 +127,11 @@ body {
     align-items: center;
     margin: 20px 0px;
     flex-wrap: wrap;
+    padding: 10px;
+    background-color: seagreen;
+    box-shadow: 10px 10px 15px grey;
+    border-radius: 5px;
+   
 }
 
 .blog-box {
@@ -131,6 +139,8 @@ body {
     background-color: #ffffff;
     border: 1px solid #ececec;
     margin: 20px 20px;
+    border-radius: 5px;
+    
 }
 
 .blog-img {
@@ -152,7 +162,7 @@ body {
 }
 
 .blog-text span {
-    color: #f33c3c;
+    color: #3c57f3;
     font-size: 0.9rem;
 }
 
@@ -178,7 +188,7 @@ body {
 }
 
 .blog-text a:hover {
-    color: #c74242;
+    color: #07a028;
     transition: all ease 0.3s;
 }
 

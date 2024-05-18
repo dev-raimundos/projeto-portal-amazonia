@@ -1,0 +1,59 @@
+*{
+    margin: 0%;
+    padding: 0%;
+} /*Configurações zeradas*/
+
+body{
+    background-color: rgb(202, 216, 207);/*cor de fundo da página*/
+}
+
+.header{
+    background-color: seagreen;/*Cabeçalho dp blog*/
+    color: white;/*cor da fonte*/
+    font-family: 'Times New Roman', Times, serif; /*fonte para titulo*/
+    padding: 15px; /* distanciamento entre o texto e a borda*/
+    text-align: center;
+}
+
+.menu,
+ .logo{
+    padding: 10px;
+}
+
+a, a:visited{/*quando o link for visitado*/
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;/*distancia entre os intens*/
+}
+
+a:hover{ /*interação ao passar o mouse*/
+    background-color:white;
+    color: black;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.container{/*container onde vai ficar o conteudo*/
+    width: 920px;
+    margin: 0 auto;/*centralizar o container*/
+}
+
+.post{ /*conteudo principal do blog*/
+    width: 660px;
+    color: black;
+    background-color: white;
+    float: left;/*colocar a esquerda*/
+    padding: 20px;
+}
+
+.barra-lateral{ /*conteudo lateral*/
+    width: 240px;
+    background-color:seagreen;
+    color:white;
+    float: right;/*colocar a direita*/
+
+}
+.data-post{
+    font-size: 0.8em;
+}
+
