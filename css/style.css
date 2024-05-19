@@ -2,47 +2,47 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Garante que margens e bordas são incluídas nas dimensões totais do elemento */
 }
 
 /* Estilos para o corpo do documento */
 body {
-    background: aliceblue;
-    font-family: "Open Sans", sans-serif; /* Defina sua fonte preferida */
+    background: aliceblue; /* Define a cor de fundo do corpo */
+    font-family: "Open Sans", sans-serif; /* Define a fonte padrão */
 }
 
 /* Estilos para o cabeçalho */
 header {
-    width: 100%;
+    width: 100%; /* Ocupa toda a largura disponível */
     height: 80px; /* Altura do cabeçalho */
-    background: darkgreen;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background: darkgreen; /* Cor de fundo do cabeçalho */
+    display: flex; /* Usa o modelo de layout flexbox */
+    justify-content: space-around; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
 }
 
 /* Estilos para o contêiner do logo e texto */
 .container.logo {
-    display: flex;
-    align-items: center;
+    display: flex; /* Usa flexbox para organizar elementos */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
 }
 
 /* Estilos para a imagem do logo */
 .logo-imagem {
-    width: 50px;
-    height: 50px;
+    width: 50px; /* Largura do logo */
+    height: 50px; /* Altura do logo */
     margin-right: 20px; /* Espaçamento à direita */
 }
 
 .logo-imagem img {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Ajusta a largura da imagem ao contêiner */
+    height: 100%; /* Ajusta a altura da imagem ao contêiner */
     object-fit: contain; /* Garante que a imagem se ajuste ao contêiner */
 }
 
 /* Estilos para o texto do logo */
 .logo-texto h1 {
-    color: white;
+    color: white; /* Cor do texto do logo */
 }
 
 /* Estilos para o menu de navegação */
@@ -51,16 +51,16 @@ header {
 }
 
 .menu li {
-    display: inline-block;
+    display: inline-block; /* Exibe os itens na mesma linha */
     margin-left: 20px; /* Espaçamento entre os itens do menu */
 }
 
 .menu li a {
     font-size: 18px; /* Tamanho da fonte dos links */
-    text-decoration: none;
-    color: white;
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: white; /* Cor do texto dos links */
     padding: 5px 15px; /* Preenchimento interno dos links */
-    border-radius: 15px; /* Borda arredondada */
+    border-radius: 15px; /* Borda arredondada dos links */
 }
 
 .menu li a:hover {
@@ -69,138 +69,139 @@ header {
 
 /* Estilos para o blog */
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: poppins;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif; /* Define a fonte padrão (duplicado) */
+    box-sizing: border-box; /* Garante que margens e bordas são incluídas nas dimensões totais do elemento */
 }
 
 ul {
-    list-style: none;
+    list-style: none; /* Remove os marcadores da lista */
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /* Remove sublinhado dos links */
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: poppins;
-    background-color: rgba(255, 255, 255, 0.15);
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif; /* Define a fonte padrão (duplicado) */
+    background-color: rgba(255, 255, 255, 0.15); /* Cor de fundo do corpo */
 }
 
 /* Estilos para o blog */
 #blog {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex; /* Usa flexbox para organizar elementos */
+    flex-direction: column; /* Organiza elementos em coluna */
+    justify-content: center; /* Centraliza os itens */
+    align-items: center; /* Centraliza os itens */
+    padding: 40px; /* Preenchimento interno */
+    border-top: 1px solid rgba(0, 0, 0, 0.05); /* Borda superior */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Borda inferior */
 }
 
 .blog-heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Usa flexbox para organizar elementos */
+    flex-direction: column; /* Organiza elementos em coluna */
+    justify-content: center; /* Centraliza os itens */
+    align-items: center; /* Centraliza os itens */
 }
 
 .blog-heading span {
-    color: #f33c3c;
+    color: #f33c3c; /* Cor do texto */
 }
 
 .blog-heading h3 {
-    font-size: 2.4rem;
-    color: #2b2b2b;
-    font-weight: 600;
+    font-size: 2.4rem; /* Tamanho da fonte */
+    color: #2b2b2b; /* Cor do texto */
+    font-weight: 600; /* Peso da fonte */
 }
 
 .blog-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px;
-    flex-wrap: wrap;
+    display: flex; /* Usa flexbox para organizar elementos */
+    justify-content: center; /* Centraliza os itens */
+    align-items: center; /* Centraliza os itens */
+    margin: 20px 0; /* Margem */
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
 }
 
 .blog-box {
-    width: 350px;
-    background-color: #ffffff;
-    border: 1px solid #ececec;
-    margin: 20px 20px;
+    width: 350px; /* Largura do contêiner do blog */
+    background-color: #ffffff; /* Cor de fundo */
+    border: 1px solid #ececec; /* Borda */
+    margin: 20px 20px; /* Margem */
 }
 
 .blog-img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Largura da imagem */
+    height: auto; /* Altura automática */
 }
 
 .blog-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    width: 100%; /* Ajusta a largura da imagem ao contêiner */
+    height: 100%; /* Ajusta a altura da imagem ao contêiner */
+    object-fit: cover; /* Garante que a imagem preencha o contêiner */
+    object-position: center; /* Centraliza a imagem */
 }
 
 .blog-text {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
+    padding: 30px; /* Preenchimento interno */
+    display: flex; /* Usa flexbox para organizar elementos */
+    flex-direction: column; /* Organiza elementos em coluna */
 }
 
 .blog-text span {
-    color: #f33c3c;
-    font-size: 0.9rem;
+    color: #f33c3c; /* Cor do texto */
+    font-size: 0.9rem; /* Tamanho da fonte */
 }
 
 .blog-text .blog-title {
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: #272727;
+    font-size: 1.3rem; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    color: #272727; /* Cor do texto */
 }
 
 .blog-text p {
-    color: #9b9b9b;
-    font-size: 0.9rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 20px 0px;
+    color: #9b9b9b; /* Cor do texto */
+    font-size: 0.9rem; /* Tamanho da fonte */
+    display: -webkit-box; /* Caixa flexível */
+    -webkit-line-clamp: 3; /* Limita o número de linhas */
+    -webkit-box-orient: vertical; /* Orientação vertical */
+    overflow: hidden; /* Esconde o excesso de texto */
+    text-overflow: ellipsis; /* Adiciona reticências ao final do texto */
+    margin: 20px 0; /* Margem */
 }
 
 .blog-text a {
-    color: #0f0f0f;
+    color: #0f0f0f; /* Cor do texto do link */
 }
 
 .blog-text a:hover {
-    color: #c74242;
-    transition: all ease 0.3s;
+    color: #c74242; /* Cor do texto ao passar o mouse */
+    transition: all ease 0.3s; /* Transição suave */
 }
 
+/* Responsividade */
 @media (max-width: 1250px) {
     .blog-box {
-        width: 300px;
+        width: 300px; /* Ajusta a largura para telas menores */
     }
 }
 
 @media (max-width: 1100px) {
     .blog-box {
-        width: 70%;
+        width: 70%; /* Ajusta a largura para telas menores */
     }
 }
 
 @media (max-width: 550px) {
     .blog-box {
-        margin: 20px 10px;
-        width: 100%;
+        margin: 20px 10px; /* Ajusta a margem para telas menores */
+        width: 100%; /* Largura total para telas muito pequenas */
     }
 
     #blog {
-        padding: 20px;
+        padding: 20px; /* Ajusta o preenchimento para telas menores */
     }
 }
