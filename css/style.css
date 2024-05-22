@@ -18,7 +18,7 @@ h1{
 header {
     width: 100%;
     height: 100px; /* Altura do cabeçalho */
-    background-color: seagreen;
+    background-color: #C1D9A9;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -45,7 +45,7 @@ header {
 
 /* Estilos para o texto do logo */
 .logo-texto h1 {
-    color: white;
+    color: #042603;
 }
 
 /* Estilos para o menu de navegação */
@@ -61,7 +61,7 @@ header {
 .menu li a {
     font-size: 18px; /* Tamanho da fonte dos links */
     text-decoration: none;
-    color: white;
+    color: #042603;
     padding: 5px 15px; /* Preenchimento interno dos links */
     border-radius: 15px; /* Borda arredondada */
 }
@@ -128,7 +128,7 @@ body {
     margin: 20px 0px;
     flex-wrap: wrap;
     padding: 10px;
-    background-color: seagreen;
+    background-color: #042603;
     box-shadow: 10px 10px 15px grey;
     border-radius: 5px;
    
@@ -188,7 +188,7 @@ body {
 }
 
 .blog-text a:hover {
-    color: #07a028;
+    color: #042603;
     transition: all ease 0.3s;
 }
 

@@ -1,59 +1,58 @@
 *{
     margin: 0%;
     padding: 0%;
-} /*Configurações zeradas*/
+} /* Configurações zeradas: remove todas as margens e preenchimentos padrões de todos os elementos */
 
 body{
-    background-color: rgb(202, 216, 207);/*cor de fundo da página*/
+    background-color: rgb(202, 216, 207); /* Define a cor de fundo da página */
 }
 
 .header{
-    background-color: seagreen;/*Cabeçalho dp blog*/
-    color: white;/*cor da fonte*/
-    font-family: 'Times New Roman', Times, serif; /*fonte para titulo*/
-    padding: 15px; /* distanciamento entre o texto e a borda*/
-    text-align: center;
+    background-color: seagreen; /* Define a cor de fundo do cabeçalho do blog */
+    color: white; /* Define a cor da fonte no cabeçalho */
+    font-family: 'Times New Roman', Times, serif; /* Define a fonte para o título */
+    padding: 15px; /* Define o distanciamento entre o texto e a borda do cabeçalho */
+    text-align: center; /* Centraliza o texto no cabeçalho */
 }
 
 .menu,
- .logo{
-    padding: 10px;
+.logo{
+    padding: 10px; /* Define o preenchimento para os elementos com as classes menu e logo */
 }
 
-a, a:visited{/*quando o link for visitado*/
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;/*distancia entre os intens*/
+a, a:visited{ /* Estilo para links normais e visitados */
+    color: white; /* Define a cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 8px 12px; /* Define o preenchimento dentro dos links */
 }
 
-a:hover{ /*interação ao passar o mouse*/
-    background-color:white;
-    color: black;
-    padding: 5px;
-    border-radius: 15px;
+a:hover{ /* Estilo para links quando o mouse passa por cima */
+    background-color: white; /* Muda a cor de fundo dos links ao passar o mouse */
+    color: black; /* Muda a cor do texto dos links ao passar o mouse */
+    padding: 5px; /* Ajusta o preenchimento dos links ao passar o mouse */
+    border-radius: 15px; /* Adiciona bordas arredondadas aos links ao passar o mouse */
 }
 
-.container{/*container onde vai ficar o conteudo*/
-    width: 920px;
-    margin: 0 auto;/*centralizar o container*/
+.container{ /* Define o container onde ficará o conteúdo principal */
+    width: 920px; /* Define a largura do container */
+    margin: 0 auto; /* Centraliza o container na página */
 }
 
-.post{ /*conteudo principal do blog*/
-    width: 660px;
-    color: black;
-    background-color: white;
-    float: left;/*colocar a esquerda*/
-    padding: 20px;
+.post{ /* Define o estilo do conteúdo principal do blog */
+    width: 660px; /* Define a largura do conteúdo principal */
+    color: black; /* Define a cor do texto do conteúdo principal */
+    background-color: white; /* Define a cor de fundo do conteúdo principal */
+    float: left; /* Alinha o conteúdo principal à esquerda */
+    padding: 20px; /* Define o preenchimento do conteúdo principal */
 }
 
-.barra-lateral{ /*conteudo lateral*/
-    width: 240px;
-    background-color:seagreen;
-    color:white;
-    float: right;/*colocar a direita*/
-
-}
-.data-post{
-    font-size: 0.8em;
+.barra-lateral{ /* Define o estilo do conteúdo lateral */
+    width: 240px; /* Define a largura da barra lateral */
+    background-color: seagreen; /* Define a cor de fundo da barra lateral */
+    color: white; /* Define a cor do texto da barra lateral */
+    float: right; /* Alinha a barra lateral à direita */
 }
 
+.data-post{ /* Define o estilo da data do post */
+    font-size: 0.8em; /* Define o tamanho da fonte para a data do post, menor que o padrão */
+}
