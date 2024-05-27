@@ -25,10 +25,6 @@ h4{
   color: darkgreen;
 }
 
-img{
-  padding: 10px;
-  margin: auto;
-}
 
 
 
@@ -279,9 +275,27 @@ a:hover{ /*interação ao passar o mouse*/
 
 /* Estilos para telas menores que 600px */
 @media only screen and (max-width: 600px) {
+  .container{
+    width: 370px;
+    height: auto;
+  }
+
+  .barra-lateral{
+    width: 370px;
+    height: auto;
+  }
   .post {
       padding: 10px;
       
+  }
+  .rodape{
+    width: auto;
+  }
+
+  img{
+    width: 340px;
+    height: auto;
+    padding: 12px;
   }
 }
 
