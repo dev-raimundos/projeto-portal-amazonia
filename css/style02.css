@@ -1,58 +1,177 @@
-*{
-    margin: 0%;
-    padding: 0%;
-} /* Configurações zeradas: remove todas as margens e preenchimentos padrões de todos os elementos */
-
-body{
-    background-color: rgb(202, 216, 207); /* Define a cor de fundo da página */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.header{
-    background-color: seagreen; /* Define a cor de fundo do cabeçalho do blog */
-    color: white; /* Define a cor da fonte no cabeçalho */
-    font-family: 'Times New Roman', Times, serif; /* Define a fonte para o título */
-    padding: 15px; /* Define o distanciamento entre o texto e a borda do cabeçalho */
-    text-align: center; /* Centraliza o texto no cabeçalho */
+/* Importando a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-.menu,
-.logo{
-    padding: 10px; /* Define o preenchimento para os elementos com as classes menu e logo */
+h1 {
+  font-family: 'Times New Roman', Times, serif;
 }
 
-a, a:visited{ /* Estilo para links normais e visitados */
-    color: white; /* Define a cor do texto dos links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    padding: 8px 12px; /* Define o preenchimento dentro dos links */
+h2 {
+  text-align: left;
+  color: #415936;
 }
 
-a:hover{ /* Estilo para links quando o mouse passa por cima */
-    background-color: white; /* Muda a cor de fundo dos links ao passar o mouse */
-    color: black; /* Muda a cor do texto dos links ao passar o mouse */
-    padding: 5px; /* Ajusta o preenchimento dos links ao passar o mouse */
-    border-radius: 15px; /* Adiciona bordas arredondadas aos links ao passar o mouse */
+h3 {
+  background-color: #415936;
+  color: white;
+  padding: 5px;
 }
 
-.container{ /* Define o container onde ficará o conteúdo principal */
-    width: 920px; /* Define a largura do container */
-    margin: 0 auto; /* Centraliza o container na página */
+p {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: #333;
 }
 
-.post{ /* Define o estilo do conteúdo principal do blog */
-    width: 660px; /* Define a largura do conteúdo principal */
-    color: black; /* Define a cor do texto do conteúdo principal */
-    background-color: white; /* Define a cor de fundo do conteúdo principal */
-    float: left; /* Alinha o conteúdo principal à esquerda */
-    padding: 20px; /* Define o preenchimento do conteúdo principal */
+.data {
+  color: rgb(47, 115, 117);
+  text-align: justify;
 }
 
-.barra-lateral{ /* Define o estilo do conteúdo lateral */
-    width: 240px; /* Define a largura da barra lateral */
-    background-color: seagreen; /* Define a cor de fundo da barra lateral */
-    color: white; /* Define a cor do texto da barra lateral */
-    float: right; /* Alinha a barra lateral à direita */
+/* Estilos para o cabeçalho */
+header {
+  width: 100%;
+  background-color: #C1D9A9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
 }
 
-.data-post{ /* Define o estilo da data do post */
-    font-size: 0.8em; /* Define o tamanho da fonte para a data do post, menor que o padrão */
+.container.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-imagem {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.logo-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo-texto h1 {
+  color: #415936;
+}
+
+/* Estilos para o menu de navegação */
+.menu {
+  flex-grow: 1; /* Faz o menu crescer para ocupar o espaço disponível */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #415936;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+
+.menu li a:hover {
+  background-color: rgba(240, 248, 255, 0.22);
+}
+
+/* Estilos para a seção principal */
+section {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+.container-blog {
+  width: 65%;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px; /* Reduz o espaço entre as divs */
+}
+
+.conteudo {
+  text-align: justify;
+}
+
+.conteudo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0; /* Espaçamento entre a imagem e o texto */
+  border-radius: 5px;
+}
+
+#barra-lateral {
+  width: 30%;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.programacao {
+  margin-bottom: 20px;
+}
+
+/* Estilos para o rodapé */
+.footer-container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .container-blog, #barra-lateral {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .menu li {
+      margin-left: 10px;
+  }
+
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .menu {
+      justify-content: center;
+  }
 }
