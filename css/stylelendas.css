@@ -103,18 +103,19 @@ header {
 /* Estilos para a seção principal */
 section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 40px;
 }
 
-.container-blog { /*container onde ficará o conteúdo blog*/
-  width: 55%; /*tamanho do container*/
+.container-blog {
+  width: 60%;
   background-color: whitesmoke;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 10px 10px 10px 10px rgb(185, 185, 185);
-  margin-right: 10px; /* Diminuir o espaço entre as divs */
   margin-bottom: 30px;
+  margin-left: auto; /* Centralizar o contêiner horizontalmente */
+  margin-right: auto; /* Centralizar o contêiner horizontalmente */
 }
 
 .conteudo {
@@ -130,17 +131,6 @@ section {
   border-radius: 5px;
 }
 
-#barra-lateral { /*barra lateral do blog*/
-  width: 30%; /*largura*/
-  background-color: whitesmoke;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 10px 10px 10px 10px rgb(185, 185, 185);
-}
-
-.programacao { /*conteúdo da barra lateral*/
-  margin-bottom: 20px;
-}
 
 /* Estilos para o rodapé */
 .footer-container {
