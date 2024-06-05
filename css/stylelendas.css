@@ -118,6 +118,12 @@ section {
   margin-right: auto; /* Centralizar o contêiner horizontalmente */
 }
 
+.lista-ingredientes{ /*lista de ingredientes da sessão culinária*/
+  margin: 10px;
+  padding-left: 30px;
+  text-align: justify;
+}
+
 .conteudo {
   text-align: justify;
   margin-bottom: 60px; /* Adicionar uma margem inferior para criar uma quebra entre os conteúdos */

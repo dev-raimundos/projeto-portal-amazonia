@@ -34,6 +34,11 @@ p {
   color: #333;
 }
 
+.localizacao{
+  text-align: center;
+  margin: 10px;
+}
+
 .data {
   color: rgb(47, 115, 117);
   text-align: justify;
