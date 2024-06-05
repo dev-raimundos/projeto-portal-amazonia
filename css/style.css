@@ -1,3 +1,6 @@
+/* Importando a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* Reset CSS básico para zerar margens, preenchimentos e definir a caixa de modelo */
 * {
     margin: 0;
@@ -8,9 +11,10 @@
 /* Estilos para o corpo do documento */
 body {
     background: rgb(238, 240, 242);
-    font-family: "Open Sans", sans-serif; /* Defina sua fonte preferida */
+    font-family: 'Poppins', sans-serif; /* Fonte Poppins aplicada */
 }
-h1{
+
+h1 {
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -18,11 +22,12 @@ h1{
 header {
     width: 100%;
     height: 100px; /* Altura do cabeçalho */
-    background-color: seagreen;
+    background-color: #C1D9A9;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 
 /* Estilos para o contêiner do logo e texto */
 .container.logo {
@@ -45,7 +50,7 @@ header {
 
 /* Estilos para o texto do logo */
 .logo-texto h1 {
-    color: white;
+    color: #415936;
 }
 
 /* Estilos para o menu de navegação */
@@ -61,36 +66,13 @@ header {
 .menu li a {
     font-size: 18px; /* Tamanho da fonte dos links */
     text-decoration: none;
-    color: white;
+    color: #415936;
     padding: 5px 15px; /* Preenchimento interno dos links */
     border-radius: 15px; /* Borda arredondada */
 }
 
 .menu li a:hover {
     background-color: rgba(240, 248, 255, 0.22); /* Cor de fundo ao passar o mouse */
-}
-
-/* Estilos para o blog */
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: poppins;
-    box-sizing: border-box;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: poppins;
-    background-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Estilos para o blog */
@@ -128,24 +110,26 @@ body {
     margin: 20px 0px;
     flex-wrap: wrap;
     padding: 10px;
-    background-color: seagreen;
+    background-color: #415936;
     box-shadow: 10px 10px 15px grey;
     border-radius: 5px;
-   
 }
 
 .blog-box {
     width: 350px;
+    height: 400px; /* Altura fixa para todas as caixas */
     background-color: #ffffff;
     border: 1px solid #ececec;
     margin: 20px 20px;
     border-radius: 5px;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .blog-img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Altura fixa para as imagens */
+
 }
 
 .blog-img img {
@@ -159,6 +143,8 @@ body {
     padding: 30px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden; /* Garante que o texto não transborde */
 }
 
 .blog-text span {
@@ -169,26 +155,31 @@ body {
 .blog-text .blog-title {
     font-size: 1.3rem;
     font-weight: 500;
-    color: #272727;
+    color: #265425;
+    margin-bottom: 10px;
+    text-decoration: none;
+    
 }
 
 .blog-text p {
     color: #9b9b9b;
     font-size: 0.9rem;
+    margin: 5px 0px;
+    flex-grow: 1;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 20px 0px;
 }
 
 .blog-text a {
     color: #0f0f0f;
+    margin-top: auto;
 }
 
 .blog-text a:hover {
-    color: #07a028;
+    color: #042603;
     transition: all ease 0.3s;
 }
 
@@ -213,4 +204,14 @@ body {
     #blog {
         padding: 20px;
     }
+}
+.footer-container {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    padding: 20px 0; /* Espaçamento interno (acima e abaixo) */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Para ajustes adicionais, se necessário */
+    bottom: 0; /* Posiciona o rodapé no final da página */
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da página */
+    font-family: 'Poppins', sans-serif; /* Aplica a fonte Poppins */
 }
