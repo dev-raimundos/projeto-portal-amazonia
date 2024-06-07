@@ -108,7 +108,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0px;
+    margin: 20px 0;
     flex-wrap: wrap;
     padding: 10px;
     background-color: #415936;
@@ -169,7 +169,7 @@ header {
 .blog-text p {
     color: #9b9b9b;
     font-size: 0.9rem;
-    margin: 5px 0px;
+    margin: 5px 0;
     flex-grow: 1;
     display: -webkit-box;
     -webkit-line-clamp: 3;
