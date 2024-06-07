@@ -1,0 +1,148 @@
+/* Importação da fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+/* Reset de estilos para todos os elementos */
+* {
+    font-family: 'Poppins', sans-serif; /* Definindo a fonte padrão para todos os elementos */
+    margin: 0; /* Removendo margens padrão */
+    padding: 0; /* Removendo preenchimentos padrão */
+    box-sizing: border-box; /* Garantindo que a caixa do modelo de layout inclua preenchimento e borda */
+}
+
+/* Estilos para o container principal */
+#container {
+    background-color: rgb(188, 234, 178); /* Cor de fundo do container */
+    border-radius: 20px; /* Borda arredondada */
+    padding: 18px; /* Preenchimento interno */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
+}
+
+/* Estilos para a barra de pesquisa */
+#search {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    gap: 8px; /* Espaçamento entre os elementos */
+    border: 1px solid black; /* Borda */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 4px 12px; /* Preenchimento interno */
+}
+
+#search input {
+    border: none; /* Removendo a borda do input */
+    background-color: transparent; /* Fundo transparente */
+    font-size: 16px; /* Tamanho da fonte */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+#search input:focus-visible {
+    outline: none; /* Removendo o contorno ao focar */
+}
+
+#search button {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Removendo a borda */
+    cursor: pointer; /* Cursor de ponteiro ao passar */
+}
+
+/* Estilos para a seção de previsão do tempo */
+#weather {
+    
+    margin-top: 20px; /* Margem superior */
+}
+
+#weather.show {
+    display: block; /* Mostrando a seção de previsão do tempo quando a classe 'show' está presente */
+}
+
+#weather #title {
+    text-align: center; /* Alinhamento do texto centralizado */
+    margin-bottom: 5px; /* Margem inferior */
+    font-weight: 600; /* Peso da fonte */
+    color: #372f3f; /* Cor do texto */
+}
+
+/* Estilos para o card principal de temperatura */
+#temp {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: space-around; /* Espaçamento uniforme dos elementos */
+    gap: 20px; /* Espaçamento entre os elementos */
+    background: linear-gradient(90deg, #5ba4c2, #7780d2); /* Gradiente de fundo */
+    color: #ffffff; /* Cor do texto */
+    border-radius: 20px; /* Borda arredondada */
+    padding: 20px; /* Preenchimento interno */
+}
+
+#temp_img {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2)); /* Sombra para a imagem */
+}
+
+#temp_value {
+    font-weight: bold; /* Peso da fonte */
+    font-size: 50px; /* Tamanho da fonte */
+    line-height: 55px; /* Altura da linha */
+}
+
+#temp_description {
+    font-weight: 500; /* Peso da fonte */
+    text-transform: capitalize; /* Transformação de texto para capitalizar */
+}
+
+/* Estilos para outras informações */
+#other_infos {
+    margin-top: 30px; /* Margem superior */
+    display: grid; /* Layout de grade */
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    gap: 12px; /* Espaçamento entre os elementos */
+}
+
+#other_infos .info {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: start; /* Alinhamento do conteúdo */
+    padding: 4px 10px; /* Preenchimento interno */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    background-color: #ffffff; /* Cor de fundo dos cards */
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+#other_infos .info h2 {
+    font-size: 12px; /* Tamanho da fonte do título */
+    font-weight: 600; /* Peso da fonte */
+}
+
+#other_infos .info i {
+    text-align: center; /* Alinhamento central */
+    font-size: 20px; /* Tamanho da fonte */
+    width: 20%; /* Largura do ícone */
+}
+
+/* Cores dos ícones de informações extras */
+#temp_max_icon {
+    color: #7f1d1d; /* Cor do ícone de temperatura máxima */
+}
+
+#temp_min_icon {
+    color: #0284c7; /* Cor do ícone de temperatura mínima */
+}
+
+#humidity_icon {
+    color: #860ee9; /* Cor do ícone de humidade */
+}
+
+#wind_icon {
+    color: #767676; /* Cor do ícone de vento */
+}
+
+/* Estilos para a seção de alerta */
+#alert {
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Layout de coluna */
+    align-items: center; /* Alinhamento vertical */
+}
+
+#alert img {
+    width: 200px; /* Largura da imagem de alerta */
+    margin-top: 20px; /* Margem superior */
+}

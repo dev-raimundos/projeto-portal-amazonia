@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS externos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/clima.css">
+    <link rel="stylesheet" href="../css/style03.css">
+    
+    <!-- Título da página -->
+    <title>Blog Section</title>
+    
+    <!-- Ícone favorito -->
+    <link rel="shortcut icon" href="images/fav-icon.svg">
+    
+    <!-- Fonte Poppins do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container logo">
+            <!-- Logotipo da empresa -->
+            <div class="logo-imagem">
+                <img src="../images/floresta.png" alt="Logo de uma floresta verde">
+            </div>
+            <!-- Nome da empresa -->
+            <div class="logo-texto">
+                <h1>PORTAL AMAZÔNIA</h1>
+            </div>
+        </div>
+        <!-- Menu de navegação -->
+        <div class="menu">
+            <ul>
+                <!-- Links do menu -->
+                <li><a href="../index.html">Página Inicial</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="clima.html">Clima</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- Seção principal -->
+    <section>
+        <div id="container">
+            <!-- Formulário de pesquisa -->
+            <form id="search">
+                <!-- Ícone de localização -->
+                <i class="fa-solid fa-location-dot"></i>
+                <!-- Campo de busca -->
+                <input
+                    type="search"
+                    name="city_name"
+                    id="city_name"
+                    placeholder="Buscar cidade"
+                >
+                <!-- Botão de pesquisa -->
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            
+            <!-- Seção de informações climáticas -->
+            <div id="weather">
+                <!-- Título da cidade -->
+                <h1 id="title">Cidade/BR</h1>
+                <div id="infos">
+                    <!-- Card principal de temperatura -->
+                    <div id="temp">
+                        <!-- Imagem representando o clima -->
+                        <img id="temp_img" src="../clima/clima.html" alt="">
+        
+                        <!-- Temperatura e descrição do clima -->
+                        <div>
+                            <p id="temp_value">
+                                0 <sup>ºc</sup>
+                            </p>
+                            <p id="temp_description">
+                               
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Outras informações climáticas -->
+                    <div id="other_infos">
+                        <!-- Informação: Temperatura máxima -->
+                        <div class="info">
+                            <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
+                            <div>
+                                <h2>Temp. max</h2>
+                                <p id="temp_max">
+                                    32 <sup>C°</sup>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Informação: Temperatura mínima -->
+                        <div class="info">
+                            <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
+                            <div>
+                                <h2>Temp. min</h2>
+                                <p id="temp_min">
+                                    12 <sup>C°</sup>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Informação: Umidade -->
+                        <div class="info">
+                            <i id="humidity_icon" class="fa-solid fa-droplet"></i>
+                            <div>
+                                <h2>Humidade</h2>
+                                <p id="humidity">
+                                    50%
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Informação: Vento -->
+                        <div class="info">
+                            <i id="wind_icon" class="fa-solid fa-wind"></i>
+                            <div>
+                                <h2>Vento</h2>
+                                <p id="wind">
+                                    50 km/h
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Seção de alerta -->
+            <div id="alert"></div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Portal Amazônia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <!-- Script JavaScript -->
+    <script src="../javascript/clima.js"></script>
+</body>
+</html>
