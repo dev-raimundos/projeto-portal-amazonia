@@ -42,3 +42,4 @@ window.addEventListener('scroll', () => {
         scrollTopButton.classList.remove('show');
     }
 });
+
