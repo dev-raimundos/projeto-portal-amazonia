@@ -1,260 +1,252 @@
+/* Importando a fonte Poppins do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Resetando margens e preenchimentos para todos os elementos */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* Importando a fonte Poppins do Google Fonts */
-
+/* Estilos padrão para o corpo do documento */
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: 'Poppins', sans-serif; /* Define a fonte padrão */
+  background-color: #f4f4f4; /* Define a cor de fundo */
+  color: #333; /* Define a cor do texto */
 }
 
+/* Estilos para títulos de nível 1 */
 h1 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif; /* Define a fonte */
 }
 
+/* Estilos para títulos de nível 2 */
 h2 {
-  text-align: left;
-  color: #415936;
+  text-align: left; /* Alinha à esquerda */
+  color: #415936; /* Define a cor do texto */
 }
 
+/* Estilos para títulos de nível 3 */
 h3 {
-  background-color: #415936;
-  color: white;
-  padding: 5px;
+  background-color: #415936; /* Define a cor de fundo */
+  color: white; /* Define a cor do texto */
+  padding: 5px; /* Adiciona preenchimento */
 }
 
-
-
+/* Estilos para parágrafos */
 p {
-  padding: 10px;
-  font-family: 'Poppins', sans-serif;
-  font-size: medium;
-  color: #333;
+  padding: 10px; /* Adiciona preenchimento */
+  font-family: 'Poppins', sans-serif; /* Define a fonte */
+  font-size: medium; /* Define o tamanho da fonte */
+  color: #333; /* Define a cor do texto */
 }
 
+/* Estilos para data */
 .data {
-  color: rgb(47, 115, 117);
-  text-align: justify;
+  color: rgb(47, 115, 117); /* Define a cor do texto */
+  text-align: justify; /* Justifica o texto */
 }
 
 /* Estilos para o cabeçalho */
 header {
-  width: 100%;
-  background-color: #C1D9A9;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  width: 100%; /* Define a largura como 100% */
+  background-color: #C1D9A9; /* Define a cor de fundo */
+  display: flex; /* Define como flexível */
+  justify-content: space-between; /* Alinha os itens com espaçamento uniforme entre eles */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding: 10px 20px; /* Adiciona preenchimento */
   box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
 }
 
+/* Estilos para o container do logo */
 .container.logo {
-  display: flex;
-  align-items: center;
+  display: flex; /* Define como flexível */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
 }
 
+/* Estilos para a imagem do logo */
 .logo-imagem {
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
+  width: 50px; /* Define a largura */
+  height: 50px; /* Define a altura */
+  margin-right: 20px; /* Adiciona margem à direita */
 }
 
+/* Estilos para a imagem dentro do logo */
 .logo-imagem img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 100%; /* Define a largura como 100% */
+  height: 100%; /* Define a altura como 100% */
+  object-fit: contain; /* Define como o conteúdo da imagem deve se ajustar ao elemento */
 }
 
+/* Estilos para o texto do logo */
 .logo-texto h1 {
-  color: #415936;
+  color: #415936; /* Define a cor do texto */
 }
 
 /* Estilos para o menu de navegação */
 .menu {
   flex-grow: 1; /* Faz o menu crescer para ocupar o espaço disponível */
-  display: flex;
-  justify-content: flex-end;
+  display: flex; /* Define como flexível */
+  justify-content: flex-end; /* Alinha os itens à direita */
 }
 
 .menu ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
+  list-style-type: none; /* Remove o estilo padrão da lista */
+  display: flex; /* Define como flexível */
+  margin: 0; /* Remove as margens */
 }
 
 .menu li {
-  margin-left: 20px;
+  margin-left: 20px; /* Adiciona margem à esquerda */
 }
 
 .menu li a {
-  font-size: 18px;
-  text-decoration: none;
-  color: #415936;
-  padding: 5px 15px;
-  border-radius: 15px;
+  font-size: 18px; /* Define o tamanho da fonte */
+  text-decoration: none; /* Remove a decoração do link */
+  color: #415936; /* Define a cor do texto */
+  padding: 5px 15px; /* Adiciona preenchimento */
+  border-radius: 15px; /* Define o raio da borda */
 }
 
 .menu li a:hover {
-  background-color: rgba(240, 248, 255, 0.22);
+  background-color: rgba(240, 248, 255, 0.22); /* Define a cor de fundo ao passar o mouse */
 }
 
 /* Estilos para a seção principal */
 section {
-  display: flex;
-  justify-content: center;
-  margin: 40px;
+  display: flex; /* Define como flexível */
+  justify-content: center; /* Alinha os itens ao centro horizontalmente */
+  margin: 40px; /* Adiciona margem */
 }
 
+/* Estilos para o container do blog */
 .container-blog {
-  width: 60%;
-  background-color: whitesmoke;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 10px 10px 10px 10px rgb(185, 185, 185);
-  margin-bottom: 30px;
-  margin-left: auto; /* Centralizar o contêiner horizontalmente */
-  margin-right: auto; /* Centralizar o contêiner horizontalmente */
+  width: 60%; /* Define a largura */
+  background-color: whitesmoke; /* Define a cor de fundo */
+  padding: 20px; /* Adiciona preenchimento */
+  border-radius: 5px; /* Define o raio da borda */
+  box-shadow: 10px 10px 10px 10px rgb(185, 185, 185); /* Adiciona sombra */
+  margin-bottom: 30px; /* Adiciona margem inferior */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
 }
 
-.lista-ingredientes { /*lista de ingredientes da sessão culinária*/
-  margin: 10px;
-  padding-left: 30px;
-  text-align: justify;
+/* Estilos para a lista de ingredientes */
+.lista-ingredientes {
+  margin: 10px; /* Adiciona margem */
+  padding-left: 30px; /* Adiciona preenchimento à esquerda */
+  text-align: justify; /* Justifica o texto */
 }
 
+/* Estilos para o conteúdo */
 .conteudo {
-  text-align: justify;
-  margin-bottom: 60px; /* Adicionar uma margem inferior para criar uma quebra entre os conteúdos */
+  text-align: justify; /* Justifica o texto */
+  margin-bottom: 60px; /* Adiciona margem inferior */
 }
 
+/* Estilos para imagens dentro do conteúdo */
 .conteudo img {
-  max-width: 100%; /*deixando a imagen proporcial ao tamanho da tela*/
-  height: auto; /*altura automática*/
-  display: block;
-  margin: 20px 0;
-  border-radius: 5px;
+  max-width: 100%; /* Define a largura máxima como 100% */
+  height: auto; /* Define a altura como automática */
+  display: block; /* Define como bloco */
+  margin: 20px 0; /* Adiciona margem */
+  border-radius: 5px; /* Define o raio da borda */
 }
 
+/* Estilos para o container sobre */
 #container_sobre {
-  margin: 20px;
+  margin: 20px; /* Adiciona margem */
 }
 
+/* Estilos para o conteúdo sobre */
 #conteudo_sobre {
-  margin: 20px;
-  background-color: white;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza os itens horizontalmente */
+  margin: 20px; /* Adiciona margem */
+  background-color: white; /* Define a cor de fundo */
+  width: 90%; /* Define a largura como 90% */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+  display: flex; /* Define como flexível */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+  align-items: center; /* Alinha os itens horizontalmente ao centro */
   text-align: center; /* Centraliza o texto */
-  border-radius: 5px;
+  border-radius: 5px; /* Define o raio da borda */
 }
 
+/* Estilos para imagens dentro do conteúdo sobre */
 #conteudo_sobre img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 30px 0; /* Adiciona margem vertical para a imagem */
-  border-radius: 20px;
+  max-width: 100%; /* Define a largura máxima como 100% */
+  height: auto; /* Define a altura como automática */
+  display: block; /* Define como bloco */
+  margin: 30px 0; /* Adiciona margem */
+  border-radius: 20px; /* Define o raio da borda */
 }
  
-.sobre{
-  text-align: justify;
-  margin-left: 40px;
-  margin-right: 40px;
-  color: #000;
-  font-family: 'Poppins', sans-serif;
+/* Estilos para parágrafos do conteúdo sobre */
+.sobre {
+  text-align: justify; /* Justifica o texto */
+  margin-left: 40px; /* Adiciona margem à esquerda */
+  margin-right: 40px; /* Adiciona margem à direita */
+  color: #000; /* Define a cor do texto */
+  font-family: 'Poppins', sans-serif; /* Define a fonte */
 }
 
-#titulo-sobre{
-  text-align: center;
-  font-family: 'Poppins' sans-serif;
-  color: #415936;
-  font-size: 2.5em;
-  font-weight: 500;
+/* Estilos para o título do conteúdo sobre */
+#titulo-sobre {
+  text-align: center; /* Centraliza o texto */
+  font-family: 'Poppins' sans-serif; /* Define a fonte */
+  color: #415936; /* Define a cor do texto */
+  font-size: 2.5em; /* Define o tamanho da fonte */
+  font-weight: 500; /* Define o peso da fonte */
 }
+
 /* Estilos para o rodapé */
 .footer-container {
-  background-color: #000;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  background-color: #000; /* Define a cor de fundo */
+  color: #fff; /* Define a cor do texto */
+  padding: 20px 0; /* Adiciona preenchimento */
+  text-align: center; /* Centraliza o texto */
+  position: relative; /* Define como relativo */
+  bottom: 0; /* Define a posição na parte inferior */
+  width: 100%; /* Define a largura como 100% */
 }
 
+/* Estilos para links de programação */
 .link-programacao {
-  text-decoration: none;
-  color: #415936;
-  margin-left: 80px;
-  padding: 10px;
+  text-decoration: none; /* Remove a decoração do link */
+  color: #415936; /* Define a cor do texto */
+  margin-left: 80px; /* Adiciona margem à esquerda */
+  padding: 10px; /* Adiciona preenchimento */
 }
 
+/* Estilos para localização */
 .localizacao {
-  color: darkolivegreen;
+  color: darkolivegreen; /* Define a cor do texto */
 }
 
-@media (max-width: 768px) { /*responsividade do blog*/
-  section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .container-blog, #barra-lateral {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .menu li {
-    margin-left: 10px;
-  }
-
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .menu {
-    justify-content: center;
-  }
-}
-
-/* Responsividade conteudo sobre */
+/* Responsividade geral */
 @media (max-width: 768px) {
-  /* Ajustes no Cabeçalho */
+  /* Ajustes no cabeçalho */
   header {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    text-align: center; /* Centraliza o texto */
   }
 
   .menu {
-      justify-content: center;
-      margin-top: 10px; /* Adiciona margem superior */
+    justify-content: center; /* Alinha os itens ao centro */
+    margin-top: 10px; /* Adiciona margem superior */
   }
 
   .menu li {
-      margin-left: 10px;
+    margin-left: 10px; /* Adiciona margem à esquerda */
   }
 
-  /* Ajustes no Conteúdo Sobre */
+  /* Ajustes no conteúdo sobre */
   #conteudo_sobre {
-      width: 100%; /* Define a largura como 100% */
-      margin: 10px; /* Adiciona margem */
+    width: 100%; /* Define a largura como 100% */
+    margin: 10px; /* Adiciona margem */
   }
-
-  
 
   .sobre {
-      margin-left: 20px;
-      margin-right: 20px;
+    margin-left: 20px; /* Adiciona margem à esquerda */
+    margin-right: 20px; /* Adiciona margem à direita */
   }
 }
-
