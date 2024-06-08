@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Importando a fonte Poppins do Google Fonts */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    text-align: left;
+    color: #415936;
+}
+
+h3 {
+    background-color: #415936;
+    color: white;
+    padding: 5px;
+}
+
+p {
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    color: #333;
+}
+
+.data {
+    color: rgb(47, 115, 117);
+    text-align: justify;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    width: 100%;
+    background-color: #C1D9A9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
+}
+
+.container.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-imagem {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.logo-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo-texto h1 {
+    color: #415936;
+}
+
+/* Estilos para o menu de navegação */
+.menu {
+    flex-grow: 1; /* Faz o menu crescer para ocupar o espaço disponível */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #415936;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.menu li a:hover {
+    background-color: rgba(240, 248, 255, 0.22);
+}
+
+/* Estilos para a seção principal */
+section {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.container-blog {
+    width: 60%;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 10px rgb(185, 185, 185);
+    margin-bottom: 30px;
+    margin-left: auto; /* Centralizar o contêiner horizontalmente */
+    margin-right: auto; /* Centralizar o contêiner horizontalmente */
+}
+
+.lista-ingredientes{ /*lista de ingredientes da sessão culinária*/
+    margin: 10px;
+    padding-left: 30px;
+    text-align: justify;
+}
+
+.conteudo {
+    text-align: justify;
+    margin-bottom: 60px; /* Adicionar uma margem inferior para criar uma quebra entre os conteúdos */
+}
+
+.conteudo img {
+    max-width: 100%; /*deixando a imagen proporcial ao tamanho da tela*/
+    height: auto; /*altura automática*/
+    display: block;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* Estilos para o rodapé */
+.footer-container {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position:  relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.link-programacao{
+    text-decoration: none;
+    color: #415936;
+    margin-left: 80px;
+    padding: 10px;
+}
+
+.localizacao{
+    color: darkolivegreen;
+}
+
+@media (max-width: 768px) { /*responsividade do blog*/
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-blog, #barra-lateral {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .menu li {
+        margin-left: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+}
+
+/* Estilo para a seção principal */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Faz a seção principal ocupar toda a altura da tela */
+}
+
+.hero-body {
+    max-width: 400px; /* Define a largura máxima do conteúdo */
+    width: 100%;
+    padding: 20px;
+}
+
+.title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+.input.is-large {
+    border-radius: 5px;
+    padding: 5px;
+    height: 30px;
+    width: 100%;
+}
+
+.button.is-link.is-large.is-fullwidth {
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    background-color: #363636;
+    color: #fff;
+    border: none;
+}
+
+.notification.is-danger {
+    background-color: #ff3860;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
