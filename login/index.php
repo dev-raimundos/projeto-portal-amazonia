@@ -14,7 +14,6 @@ session_start();
     <!-- Título da página -->
     <title>Sistema de Login - PHP + MySQL</title>
     <!-- Estilos -->
-    <link rel="stylesheet" href="css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/login.css">
 </head>
 <body>
@@ -61,15 +60,19 @@ session_start();
                         <div class="field">
                             <div class="control">
                                 <!-- Campo de usuário -->
-                                <input name="usuario" type="text" class="input is-large" placeholder="Seu Email"
-                                       autofocus="">
+                                <label>
+                                    <input name="usuario" type="text" class="input is-large" placeholder="Seu Email"
+                                           autofocus="">
+                                </label>
                             </div>
                         </div>
                     <br>
                         <div class="field">
                             <div class="control">
                                 <!-- Campo de senha -->
-                                <input name="senha" class="input is-large" type="password" placeholder="Sua Senha">
+                                <label>
+                                    <input name="senha" class="input is-large" type="password" placeholder="Sua Senha">
+                                </label>
                             </div>
                         </div>
                     <br>
