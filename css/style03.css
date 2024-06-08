@@ -28,6 +28,8 @@ h3 {
   padding: 5px;
 }
 
+
+
 p {
   padding: 10px;
   font-family: 'Poppins', sans-serif;
@@ -119,7 +121,7 @@ section {
   margin-right: auto; /* Centralizar o contêiner horizontalmente */
 }
 
-.lista-ingredientes{ /*lista de ingredientes da sessão culinária*/
+.lista-ingredientes { /*lista de ingredientes da sessão culinária*/
   margin: 10px;
   padding-left: 30px;
   text-align: justify;
@@ -138,44 +140,96 @@ section {
   border-radius: 5px;
 }
 
+#container_sobre {
+  margin: 20px;
+}
 
+#conteudo_sobre {
+  margin: 20px;
+  background-color: white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens horizontalmente */
+  text-align: center; /* Centraliza o texto */
+  border-radius: 5px;
+}
+
+#conteudo_sobre img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 30px 0; /* Adiciona margem vertical para a imagem */
+  border-radius: 20px;
+}
+ 
+.sobre{
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 40px;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+#titulo-sobre{
+  text-align: center;
+  font-family: 'Poppins' sans-serif;
+  color: #415936;
+  font-size: 2.5em;
+  font-weight: 500;
+}
 /* Estilos para o rodapé */
 .footer-container {
   background-color: #000;
   color: #fff;
   padding: 20px 0;
   text-align: center;
-  position:  relative;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
 
-.link-programacao{
+.link-programacao {
   text-decoration: none;
   color: #415936;
   margin-left: 80px;
   padding: 10px;
 }
 
-.localizacao{
+.localizacao {
   color: darkolivegreen;
 }
 
 @media (max-width: 768px) { /*responsividade do blog*/
   section {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .container-blog, #barra-lateral {
-      width: 100%;
-      margin: 10px 0;
+    width: 100%;
+    margin: 10px 0;
   }
 
   .menu li {
-      margin-left: 10px;
+    margin-left: 10px;
   }
 
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+}
+
+/* Responsividade conteudo sobre */
+@media (max-width: 768px) {
+  /* Ajustes no Cabeçalho */
   header {
       flex-direction: column;
       text-align: center;
@@ -183,5 +237,24 @@ section {
 
   .menu {
       justify-content: center;
+      margin-top: 10px; /* Adiciona margem superior */
+  }
+
+  .menu li {
+      margin-left: 10px;
+  }
+
+  /* Ajustes no Conteúdo Sobre */
+  #conteudo_sobre {
+      width: 100%; /* Define a largura como 100% */
+      margin: 10px; /* Adiciona margem */
+  }
+
+  
+
+  .sobre {
+      margin-left: 20px;
+      margin-right: 20px;
   }
 }
+
