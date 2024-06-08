@@ -1,4 +1,5 @@
 <?php
+global $conexao;
 session_start();
 include('conexao.php');
 
