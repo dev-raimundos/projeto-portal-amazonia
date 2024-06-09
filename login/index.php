@@ -43,7 +43,7 @@ session_start();
     <div class="hero-body">
         <div class="container has-text-centered">
             <div class="column is-4 is-offset-4">
-                <h3 class="title has-text-grey">Sistema de Login</h3>
+                <h3 class="title has-text-grey">Login</h3>
                 <!-- Verifica se houve tentativa de login sem sucesso -->
                 <?php if(isset($_SESSION['nao_autenticado'])): ?>
                     <div class="notification is-danger">

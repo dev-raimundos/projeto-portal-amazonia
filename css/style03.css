@@ -200,8 +200,6 @@ section {
 
 /* Estilos para o rodapé */
 .footer-container {
-  background-color: #000; /* Define a cor de fundo */
-  color: #fff; /* Define a cor do texto */
   padding: 20px 0; /* Adiciona preenchimento */
   text-align: center; /* Centraliza o texto */
   position: relative; /* Define como relativo */
