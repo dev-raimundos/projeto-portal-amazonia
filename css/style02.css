@@ -151,13 +151,18 @@ section {
 
 /* Estilos para o rodapé */
 .footer-container {
-  background-color: #000;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    padding: 20px 0; /* Espaçamento interno (acima e abaixo) */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Para ajustes adicionais, se necessário */
+    bottom: 0; /* Posiciona o rodapé no final da página */
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da página */
+    font-family: 'Poppins', sans-serif; /* Aplica a fonte Poppins */
+}
+.rodape {
+    color: white;
+    text-align: center;
 }
 
 .link-programacao{

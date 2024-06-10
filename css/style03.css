@@ -3,154 +3,322 @@
 
 /* Resetando margens e preenchimentos para todos os elementos */
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* Estilos padrão para o corpo do documento */
 body {
-  font-family: 'Poppins', sans-serif; /* Define a fonte padrão */
-  background-color: #f4f4f4; /* Define a cor de fundo */
-  color: #333; /* Define a cor do texto */
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão */
+    background-color: #f4f4f4; /* Define a cor de fundo */
+    color: #333; /* Define a cor do texto */
 }
 
 /* Estilos para títulos de nível 1 */
 h1 {
-  font-family: 'Times New Roman', Times, serif; /* Define a fonte */
+    font-family: 'Times New Roman', Times, serif; /* Define a fonte */
 }
 
 /* Estilos para títulos de nível 2 */
 h2 {
-  text-align: left; /* Alinha à esquerda */
-  color: #415936; /* Define a cor do texto */
+    text-align: left; /* Alinha à esquerda */
+    color: #415936; /* Define a cor do texto */
 }
 
 /* Estilos para títulos de nível 3 */
 h3 {
-  background-color: #415936; /* Define a cor de fundo */
-  color: white; /* Define a cor do texto */
-  padding: 5px; /* Adiciona preenchimento */
+    background-color: #415936; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    padding: 5px; /* Adiciona preenchimento */
 }
 
 /* Estilos para parágrafos */
 p {
-  padding: 10px; /* Adiciona preenchimento */
-  font-family: 'Poppins', sans-serif; /* Define a fonte */
-  font-size: medium; /* Define o tamanho da fonte */
-  color: #333; /* Define a cor do texto */
+    padding: 10px; /* Adiciona preenchimento */
+    font-family: 'Poppins', sans-serif; /* Define a fonte */
+    font-size: medium; /* Define o tamanho da fonte */
+    color: #333; /* Define a cor do texto */
 }
 
 /* Estilos para data */
 .data {
-  color: rgb(47, 115, 117); /* Define a cor do texto */
-  text-align: justify; /* Justifica o texto */
+    color: rgb(47, 115, 117); /* Define a cor do texto */
+    text-align: justify; /* Justifica o texto */
 }
 
 /* Estilos para o cabeçalho */
 header {
-  width: 100%; /* Define a largura como 100% */
-  background-color: #C1D9A9; /* Define a cor de fundo */
-  display: flex; /* Define como flexível */
-  justify-content: space-between; /* Alinha os itens com espaçamento uniforme entre eles */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
-  padding: 10px 20px; /* Adiciona preenchimento */
-  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
+    width: 100%; /* Define a largura como 100% */
+    background-color: #C1D9A9; /* Define a cor de fundo */
+    display: flex; /* Define como flexível */
+    justify-content: space-between; /* Alinha os itens com espaçamento uniforme entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 10px 20px; /* Adiciona preenchimento */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
 }
 
 /* Estilos para o container do logo */
 .container.logo {
-  display: flex; /* Define como flexível */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
+    display: flex; /* Define como flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
 }
 
 /* Estilos para a imagem do logo */
 .logo-imagem {
-  width: 50px; /* Define a largura */
-  height: 50px; /* Define a altura */
-  margin-right: 20px; /* Adiciona margem à direita */
+    width: 50px; /* Define a largura */
+    height: 50px; /* Define a altura */
+    margin-right: 20px; /* Adiciona margem à direita */
 }
 
 /* Estilos para a imagem dentro do logo */
 .logo-imagem img {
-  width: 100%; /* Define a largura como 100% */
-  height: 100%; /* Define a altura como 100% */
-  object-fit: contain; /* Define como o conteúdo da imagem deve se ajustar ao elemento */
+    width: 100%; /* Define a largura como 100% */
+    height: 100%; /* Define a altura como 100% */
+    object-fit: contain; /* Define como o conteúdo da imagem deve se ajustar ao elemento */
 }
 
 /* Estilos para o texto do logo */
 .logo-texto h1 {
-  color: #415936; /* Define a cor do texto */
+    color: #415936; /* Define a cor do texto */
 }
 
 /* Estilos para o menu de navegação */
 .menu {
-  flex-grow: 1; /* Faz o menu crescer para ocupar o espaço disponível */
-  display: flex; /* Define como flexível */
-  justify-content: flex-end; /* Alinha os itens à direita */
+    flex-grow: 1; /* Faz o menu crescer para ocupar o espaço disponível */
+    display: flex; /* Define como flexível */
+    justify-content: flex-end; /* Alinha os itens à direita */
 }
 
 .menu ul {
-  list-style-type: none; /* Remove o estilo padrão da lista */
-  display: flex; /* Define como flexível */
-  margin: 0; /* Remove as margens */
+    list-style-type: none; /* Remove o estilo padrão da lista */
+    display: flex; /* Define como flexível */
+    margin: 0; /* Remove as margens */
 }
 
 .menu li {
-  margin-left: 20px; /* Adiciona margem à esquerda */
+    margin-left: 20px; /* Adiciona margem à esquerda */
 }
 
 .menu li a {
-  font-size: 18px; /* Define o tamanho da fonte */
-  text-decoration: none; /* Remove a decoração do link */
-  color: #415936; /* Define a cor do texto */
-  padding: 5px 15px; /* Adiciona preenchimento */
-  border-radius: 15px; /* Define o raio da borda */
+    font-size: 18px; /* Define o tamanho da fonte */
+    text-decoration: none; /* Remove a decoração do link */
+    color: #415936; /* Define a cor do texto */
+    padding: 5px 15px; /* Adiciona preenchimento */
+    border-radius: 15px; /* Define o raio da borda */
 }
 
 .menu li a:hover {
-  background-color: rgba(240, 248, 255, 0.22); /* Define a cor de fundo ao passar o mouse */
+    background-color: rgba(240, 248, 255, 0.22); /* Define a cor de fundo ao passar o mouse */
 }
 
 /* Estilos para a seção principal */
 section {
-  display: flex; /* Define como flexível */
-  justify-content: center; /* Alinha os itens ao centro horizontalmente */
-  margin: 40px; /* Adiciona margem */
+    display: flex; /* Define como flexível */
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+    margin: 40px; /* Adiciona margem */
 }
 
 /* Estilos para o container do blog */
 .container-blog {
-  width: 60%; /* Define a largura */
-  background-color: whitesmoke; /* Define a cor de fundo */
-  padding: 20px; /* Adiciona preenchimento */
-  border-radius: 5px; /* Define o raio da borda */
-  box-shadow: 10px 10px 10px 10px rgb(185, 185, 185); /* Adiciona sombra */
-  margin-bottom: 30px; /* Adiciona margem inferior */
-  margin-left: auto; /* Centraliza horizontalmente */
-  margin-right: auto; /* Centraliza horizontalmente */
+    width: 60%; /* Define a largura */
+    background-color: whitesmoke; /* Define a cor de fundo */
+    padding: 20px; /* Adiciona preenchimento */
+    border-radius: 5px; /* Define o raio da borda */
+    box-shadow: 10px 10px 10px 10px rgb(185, 185, 185); /* Adiciona sombra */
+    margin-bottom: 30px; /* Adiciona margem inferior */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
 }
 
 /* Estilos para a lista de ingredientes */
 .lista-ingredientes {
-  margin: 10px; /* Adiciona margem */
-  padding-left: 30px; /* Adiciona preenchimento à esquerda */
-  text-align: justify; /* Justifica o texto */
+    margin: 10px; /* Adiciona margem */
+    padding-left: 30px; /* Adiciona preenchimento à esquerda */
+    text-align: justify; /* Justifica o texto */
 }
 
 /* Estilos para o conteúdo */
 .conteudo {
-  text-align: justify; /* Justifica o texto */
-  margin-bottom: 60px; /* Adiciona margem inferior */
+    text-align: justify; /* Justifica o texto */
+    margin-bottom: 60px; /* Adiciona margem inferior */
 }
 
 /* Estilos para imagens dentro do conteúdo */
 .conteudo img {
-  max-width: 100%; /* Define a largura máxima como 100% */
-  height: auto; /* Define a altura como automática */
-  display: block; /* Define como bloco */
-  margin: 20px 0; /* Adiciona margem */
-  border-radius: 5px; /* Define o raio da borda */
+    max-width: 100%; /* Define a largura máxima como 100% */
+    height: auto; /* Define a altura como automática */
+    display: block; /* Define como bloco */
+    margin: 20px 0; /* Adiciona margem */
+    border-radius: 5px; /* Define o raio da borda */
 }
+
+/* Estilos para o container principal */
+#container {
+    background-color: rgb(188, 234, 178); /* Cor de fundo do container */
+    border-radius: 20px; /* Borda arredondada */
+    padding: 18px; /* Preenchimento interno */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
+}
+
+/* Estilos para a barra de pesquisa */
+#search {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    gap: 8px; /* Espaçamento entre os elementos */
+    border: 1px solid rgb(255, 255, 255); /* Borda */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 4px 12px; /* Preenchimento interno */
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#search input {
+    border: none; /* Removendo a borda do input */
+    background-color: transparent; /* Fundo transparente */
+    font-size: 18px; /* Tamanho da fonte */
+    width: 100%; /* Ocupa toda a largura disponível */
+    color: rgb(255, 255, 255);
+}
+
+#search input:focus-visible {
+    outline: none; /* Removendo o contorno ao focar */
+}
+
+#search button {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Removendo a borda */
+    cursor: pointer; /* Cursor de ponteiro ao passar */
+    color: white;
+}
+
+/* Estilos para a seção de previsão do tempo */
+#weather {
+    margin-top: 20px; /* Margem superior */
+}
+
+#weather.show {
+    display: block; /* Mostrando a seção de previsão do tempo quando a classe 'show' está presente */
+}
+
+#weather #title {
+    text-align: center; /* Alinhamento do texto centralizado */
+    margin-bottom: 5px; /* Margem inferior */
+    font-weight: 600; /* Peso da fonte */
+    color: #fdfffe; /* Cor do texto */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para o card principal de temperatura */
+#temp {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: space-around; /* Espaçamento uniforme dos elementos */
+    gap: 20px; /* Espaçamento entre os elementos */
+    background: linear-gradient(90deg, #77cdef, #8e98f3); /* Gradiente de fundo */
+    color: #ffffff; /* Cor do texto */
+    border-radius: 20px; /* Borda arredondada */
+    padding: 20px; /* Preenchimento interno */
+}
+
+#temp_img {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2)); /* Sombra para a imagem */
+}
+
+#temp_value {
+    font-weight: bold; /* Peso da fonte */
+    font-size: 50px; /* Tamanho da fonte */
+    line-height: 55px; /* Altura da linha */
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#temp_description {
+    font-weight: 500; /* Peso da fonte */
+    text-transform: capitalize; /* Transformação de texto para capitalizar */
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+/* Estilos para outras informações */
+#other_infos {
+    margin-top: 30px; /* Margem superior */
+    display: grid; /* Layout de grade */
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    gap: 12px; /* Espaçamento entre os elementos */
+}
+
+#other_infos .info {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: start; /* Alinhamento do conteúdo */
+    padding: 4px 10px; /* Preenchimento interno */
+    border-radius: 8px; /* Borda arredondada */
+    /* Sombra */
+    background-color: #ffffff; /* Cor de fundo dos cards */
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+#other_infos .info {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#other_infos .info h2 {
+    font-size: 12px; /* Tamanho da fonte do título */
+    font-weight: 600; /* Peso da fonte */
+}
+
+#other_infos .info i {
+    text-align: center; /* Alinhamento central */
+    font-size: 20px; /* Tamanho da fonte */
+    width: 20%; /* Largura do ícone */
+}
+
+/* Cores dos ícones de informações extras */
+#temp_max_icon {
+    color: #7f1d1d; /* Cor do ícone de temperatura máxima */
+
+}
+
+#temp_min_icon {
+    color: #0284c7; /* Cor do ícone de temperatura mínima */
+}
+
+#humidity_icon {
+    color: #860ee9; /* Cor do ícone de humidade */
+}
+
+#wind_icon {
+    color: #767676; /* Cor do ícone de vento */
+}
+
+/* Estilos para a seção de alerta */
+#alert {
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Layout de coluna */
+    align-items: center; /* Alinhamento vertical */
+}
+
+#alert img {
+    width: 200px; /* Largura da imagem de alerta */
+    margin-top: 20px; /* Margem superior */
+}
+
+#temp_max{ /*parágrafo de tempo máximo*/
+    color: #7f1d1d;
+}
+
+#temp_min{ /*parágrafo tempo minimo*/
+    color: #0284c7;
+}
+
+#humidity{ /*parágrafo humidade*/
+    color:#860ee9;
+}
+
+#wind{ /*parágrafo vento*/
+    color: #767676;
+}
+
 
 /* Estilos para o container sobre */
 #container_sobre {
@@ -200,6 +368,7 @@ section {
 
 /* Estilos para o rodapé */
 .footer-container {
+    color: black;
   padding: 20px 0; /* Adiciona preenchimento */
   text-align: center; /* Centraliza o texto */
   position: relative; /* Define como relativo */
@@ -248,3 +417,17 @@ section {
     margin-right: 20px; /* Adiciona margem à direita */
   }
 }
+
+.footer-container {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    padding: 20px 0; /* Espaçamento interno (acima e abaixo) */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Para ajustes adicionais, se necessário */
+    bottom: 0; /* Posiciona o rodapé no final da página */
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da página */
+    font-family: 'Poppins', sans-serif; /* Aplica a fonte Poppins */
+}
+ .rodape {
+     color: white; /* Define cor branca para o texto do rodapé*/
+ }
